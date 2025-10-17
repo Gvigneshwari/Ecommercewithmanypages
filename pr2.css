@@ -1,0 +1,92 @@
+*{
+    background-color:white;
+    color:darkblue;
+    padding:2px;
+    margin:2px;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+ padding-left:20px;
+ display:inline;
+}
+.links{
+    margin-left:30%;
+    column-gap:5px;
+}
+.iconlinks{
+    display:inline-flex;
+    align-items:center;
+    flex-direction:column;
+    background:darkblue;
+    margin-left:-500px;
+    transition:margin-left 0.3s ease-in;
+    height:100vh;
+}
+.iconlinks a{
+    color:white;
+    background-color:darkblue;
+    padding:20px;
+}
+.menu{
+    position:fixed;
+    z-index:100;
+    height:100%;
+    left:0;
+    top:0;
+}
+.links a:hover{
+    color:pink;
+}
+.imag,img2{
+  display:block;
+  margin-top:2%;
+}
+.icon{
+    display:flex;
+    left:0;
+    position:fixed;
+    top:0;
+    cursor: pointer;
+}
+.bc{
+    padding:2%;
+    margin:2%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    color:white;
+}
+.gc,.electronics,.cosmetics,.c{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin:2%;
+    color:white;
+    padding:2%;
+    
+}
+button{
+    background-color:blue;
+    color:white;
+}
+@media screen and (max-width:500px){
+    .links{
+        display:none;
+    }
+    .menu{
+        display:flex;
+    }
+} 
+@media screen and (min-width:501px){
+    .links{
+        display:flex;
+    }
+    .menu{
+        display:none;
+    }
+}
